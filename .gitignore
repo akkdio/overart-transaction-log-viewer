@@ -1,0 +1,32 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local development data
+local_data/*
+!local_data/.gitkeep
+!local_data/README.md
+!local_data/raw_transactions.example.json
+!local_data/raw_transactions.example.txt
+
