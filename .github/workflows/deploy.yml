@@ -31,7 +31,8 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/transaction-log-viewer:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/transaction-log-viewer:${{ github.sha }}
-          cache-to: type=inline
+          cache-to: type=local,mode=max
+          cache-from: type=local
       
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1.0.0
