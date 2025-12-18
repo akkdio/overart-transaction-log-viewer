@@ -186,7 +186,7 @@ The deployment process is fully automated:
 
 #### Option 1: Using Launch Template (Recommended)
 
-1. Create launch template following [LAUNCH_TEMPLATE_SETUP.md](LAUNCH_TEMPLATE_SETUP.md)
+1. Create launch template following [LAUNCH_TEMPLATE_SETUP.md](docs/LAUNCH_TEMPLATE_SETUP.md)
 2. Launch instance from template
 3. Associate Elastic IP: `52.205.10.200`
 4. Wait 5-7 minutes for automatic deployment
@@ -247,7 +247,7 @@ Configure DNS A record:
 
 ## Monitoring & Maintenance
 
-See [COMMANDS.md](COMMANDS.md) for useful commands for:
+See [COMMANDS.md](docs/COMMANDS.md) for useful commands for:
 - Checking application status
 - Viewing logs
 - Restarting services
@@ -255,7 +255,7 @@ See [COMMANDS.md](COMMANDS.md) for useful commands for:
 
 ## Spot Instance Recovery
 
-If the spot instance is terminated, follow the recovery guide in [RECOVERY.md](RECOVERY.md).
+If the spot instance is terminated, follow the recovery guide in [RECOVERY.md](docs/RECOVERY.md).
 
 ## Troubleshooting
 
@@ -322,9 +322,11 @@ transaction-log-viewer/
 ├── ec2-setup.sh                   # EC2 instance setup script
 ├── start-local-dev.sh             # Local development startup script
 ├── README.md                       # This file
-├── RECOVERY.md                     # Spot instance recovery guide
-├── COMMANDS.md                     # Useful commands reference
-├── LAUNCH_TEMPLATE_SETUP.md       # EC2 launch template setup guide
+├── docs/                           # Documentation (not tracked in git)
+│   ├── RECOVERY.md                 # Spot instance recovery guide
+│   ├── COMMANDS.md                 # Useful commands reference
+│   ├── LAUNCH_TEMPLATE_SETUP.md   # EC2 launch template setup guide
+│   └── BACKEND_INTEGRATION.md      # Backend integration guide
 ├── local_data/                     # Local development data
 │   ├── raw_transactions.txt       # Paste text-format data here
 │   ├── raw_transactions.json      # Or paste JSON-format data here

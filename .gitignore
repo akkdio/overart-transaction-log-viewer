@@ -30,3 +30,6 @@ local_data/*
 !local_data/raw_transactions.example.json
 !local_data/raw_transactions.example.txt
 
+# Documentation
+docs/
+
