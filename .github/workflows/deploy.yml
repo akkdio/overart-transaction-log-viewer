@@ -31,7 +31,6 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/transaction-log-viewer:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/transaction-log-viewer:${{ github.sha }}
-          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/transaction-log-viewer:latest
           cache-to: type=inline
       
       - name: Deploy to EC2
